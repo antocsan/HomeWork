@@ -1,0 +1,47 @@
+.row
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-top: 2.5rem
+.col
+    position: relative
+    flex-basis: 32%
+    
+.card
+    &__text
+        text-align: left
+        position: absolute
+        bottom: -10rem
+        left: 0.4rem
+        z-index: 98
+        min-width: 330px
+        min-height: 286px
+        margin-left: 2.583rem
+        background-color: $light
+        font-family: 'Futura Book' cursive center
+        font-size: 1.16rem
+        line-height: 2.08rem
+        color: $grey
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
+    &__title
+        font-family: 'Yeseva One Regular' , cursive
+        font-style: normal
+        font-weight: normal
+        font-size: 1.5rem
+        line-height: 2.083rem
+        margin-left: 2.583rem
+        margin-bottom: 1rem
+        color: $dark
+    &__list
+        margin-top: 0
+        margin-bottom: 3rem
+    &__pricetag
+        position: absolute
+        font-family: 'Yeseva One Regular' , cursive
+        font-style: normal
+        font-weight: normal
+        font-size: 1.5rem
+        line-height: 2.08rem
+        text-align: center
+        text-transform: uppercase
+        padding: 1.3rem 1.6666 rem
