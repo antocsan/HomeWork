@@ -4,20 +4,56 @@
     border-radius: 2px
     font-size: 0.92rem
     text-transform: uppercase
-    &::hover
+    &:hover
         cursor: pointer
     &--primary
         background-color: $primary
         box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2)
         transition: box-shadow 0.3s
         color: $light
-        &::hover
+        &:hover
             box-shadow: none
     &--outline
         border: 1px solid $light
         background-color: transparent
         border-radius: 2px
         color: $light
+.label
+        font-style: normal
+        font-weight: normal
+        font-size: 1.25rem
+        line-height: 1.6656rem
+        color: rgba(255, 255, 255, 0.5)
+.input
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+    font-size: 1.5rem
+    color: $light
+    padding: 0.5rem 0
+    &::placeholder
+        color: $light
+        font-size: 1.5rem
+.policy
+    &__checkbox
+        opacity: 0
+        visibility: hidden
+        &:checked +
+            .policy__label
+                &::before
+                    background: $primary url('/img/check.svg') no-repeat center / 0.7rem
+    &__label
+            display: flex
+            align-items: center
+            &::before
+                content: ''
+                width: 18px
+                height: 18px
+                border: 1px solid $primary 
+                border-radius: 1px
+                cursor: pointer
+                margin-right: 0.666rem
+
 
         
 
