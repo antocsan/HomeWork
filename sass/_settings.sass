@@ -7,16 +7,47 @@ a
 html
     font-size: 12px 
 body
-    font-family: 'Futura Book',sans-serif;
+    font-family: 'Futura Book',sans-serif
     font-size: 1rem 
 img
     max-width: 100%
 
 .section
+    &--dark
+        background-color: $dark
+        color: $light
     &-title
         text-align: center
-        text-transform: uppercase
-        font-family: 'Yeseva One Regular' ,cursive
+        margin-bottom: 2.5rem
+        &__text
+            font-family: 'Futura Book' ,sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 1.5rem
+            line-height: 2.41rem
+            max-width: 36.8333rem
+        &--left
+            text-align: left
+        &__heading
+            line-height: 37px
+            font-family: 'Yeseva One Regular' ,cursive
+            text-transform: uppercase
+            font-style: normal
+            font-weight: normal
+            font-size: 2.25rem
+            &--primary
+            color: $primary
+        &__word
+            display: block
+            &::after
+                display: inline-block
+                content: ''
+                width: 92px
+                height: 1px
+                background-color: $primary
+                margin-bottom: 8px
+                margin-left: 8px
+
         &__image
             display: flex
             justify-content: center
@@ -28,3 +59,4 @@ img
                 background-color: $primary
                 margin: 0 10px
            
+    
