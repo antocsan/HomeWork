@@ -50,7 +50,7 @@ $(document).ready(function() {
     //validation form
 
 
-    control__form
+
     $(".control__form").validate({
         errorClass: "invalid",
         rules: {
