@@ -1,6 +1,16 @@
 .footer
+    position: relative
     background: url('../../img/footer-bg.jpg') no-repeat center / cover
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba($dark,0.7)
     &__form
+        position: relative
         display: flex
         flex-wrap: wrap
         margin: auto
@@ -8,12 +18,14 @@
         min-height: 31.3rem
         padding: 2.83rem 
     &-wrap
+        position: relative
         margin: auto
         margin-top: -20rem
         max-width: 73.5rem
         min-height: 37rem
         background-color: $black
     &-title
+        position: relative
         text-transform: uppercase   
         font-family: 'Yeseva One Regular', cursive
         font-size: 1.66rem
@@ -24,16 +36,74 @@
         padding-top: 2.83rem 
         margin-top: 0
     &__input-group
+        position: relative
         display: flex
         flex-direction: column
         flex-basis: 50%
     &__button
+        position: relative
         margin: auto
         width: 16.6rem
         height: 4.25rem
     &__menu
+        position: relative
         padding: 5rem 0 
         background-color: $dark
-        
-        
-
+    &__map
+        position: relative
+        max-width: 77rem
+        margin: 0
+        margin: auto
+        margin-bottom: 2rem
+        margin-top: 2rem
+.info
+    position: relative
+    &__title
+        text-align: center
+        font-family: 'Yeseva One Regular', cursive
+        font-style: normal
+        font-weight: normal
+        font-size: 1.6rem
+        line-height: 2.3rem
+        text-align: center
+        text-transform: uppercase   
+        color: $primary 
+        max-width: 49rem
+        margin: auto
+        margin-top: 4.3rem
+    &__link
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 2rem 1rem 
+        &-inst
+            color: $light
+            &::after
+                display: flex
+                content: ''
+                background: $primary url('../../img/inst.svg') no-repeat center
+                width: 30px
+                height: 30px
+                border: 2px solid $primary
+                border-radius: 50%
+                margin-left: 20px
+        &-mail
+            color: $light
+            &::after
+                display: flex
+                content: ''
+                background: $primary url('../../img/mail.svg') no-repeat center
+                width: 30px
+                height: 30px
+                border: 2px solid $primary
+                border-radius: 50%
+                margin-left: 20px
+.scroll-up
+    position: relative
+    display: flex
+    justify-content: flex-start
+    text-decoration: none
+    text-transform: uppercase 
+    &__a
+        color: $light 
+            
