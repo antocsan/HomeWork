@@ -1,7 +1,9 @@
 .client
-    &__wrap
-        height: 35.7rem
     background: url('../../img/client-bg.jpg') no-repeat center /cover
+    padding-bottom: 20rem
+    &__wrap
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.06)
+        height: 35.7rem
     &__card
         display: flex
         flex-direction: row
@@ -66,9 +68,11 @@
             line-height: 180%
             color: $grey
             margin-bottom: 3rem
+            min-height: 20rem
         &__title
             display: flex
             &-img>img
+                margin-left: 3rem
                 border-radius: 50%
             &-info
                 max-width: 16.4rem
