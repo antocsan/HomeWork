@@ -1,0 +1,80 @@
+.client
+    &__wrap
+        height: 35.7rem
+    background: url('../../img/client-bg.jpg') no-repeat center /cover
+    &__card
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+        margin-top: 3.5rem
+        &__info
+            display: flex
+            justify-content: flex-start
+            align-self: flex-end
+            margin: 0
+            &__size
+                display: flex
+                align-items: center
+                justify-content: center
+                background-color: $primary
+                border: 1px solid $light
+                font-family: 'Yeseva One Regular',cursive
+                font-style: normal
+                font-weight: normal
+                font-size: 1.41rem
+                line-height: 2rem 
+                text-align: center
+                color: $light
+                margin-bottom: 2rem
+                width: 11.25rem
+                height: 4.5rem
+                &::before
+                    content: ''
+                    background: $primary url('../../img/size.svg') no-repeat center
+                    width: 30px
+                    height: 30px
+                    margin-right: 1rem
+            &__days
+                display: flex
+                align-items: center
+                justify-content: center
+                background-color: $primary
+                border: 1px solid $light
+                margin: 0
+                font-family: 'Yeseva One Regular',cursive
+                font-style: normal
+                font-weight: normal
+                font-size: 1.41rem
+                line-height: 2rem 
+                text-align: center
+                color: $light
+                margin-bottom: 2rem
+                width: 13.16rem
+                height: 4.5rem
+                &::before
+                    content: ''
+                    background: $primary url('../../img/days.svg') no-repeat center
+                    width: 30px
+                    height: 30px
+                    margin-right: 1rem
+        &__text
+            font-family: 'Futura Book'
+            font-style: normal
+            font-weight: normal
+            font-size: 1.25rem
+            line-height: 180%
+            color: $grey
+            margin-bottom: 3rem
+        &__title
+            display: flex
+            &-img>img
+                border-radius: 50%
+            &-info
+                max-width: 16.4rem
+                margin-left: 2rem
+                font-family: 'Yeseva One Regular',cursive
+                font-style: normal
+                font-weight: normal
+                font-size: 1.5rem
+                line-height: 1.91rem
