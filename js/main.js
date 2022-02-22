@@ -84,6 +84,7 @@ $(document).ready(function() {
             }
         }
     });
+    //
 
 
     // mask for form
@@ -92,3 +93,28 @@ $(document).ready(function() {
 
 
 });
+
+
+
+//video
+var palayer;
+
+$('.video__play').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+        height: '460',
+        width: '100%',
+        videoId: 'RHzzLqJWqHs',
+        playerVars: {
+            'playsinline': 1
+        },
+        events: {
+            'onReady': videoPlay,
+        }
+    });
+})
+
+function videoPlay(event) {
+    event.target.playVideo();
+}
+
+//
